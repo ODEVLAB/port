@@ -112,6 +112,10 @@ nav{
 
 }
 
+nav.show-box-shadow {
+    box-shadow: 0 0.6rem 1rem var(--color-primary-light);
+}
+
 nav .container {
     display: flex;
     justify-content: space-between;
@@ -155,10 +159,12 @@ nav .container ul li a.active {
 
 section.landing {
     display: grid;
-    place-items: centre;
+    place-items: center;
     position: relative;
-    top: 5rem;
-    padding-bottom: 14rem;
+    top: 2rem;
+    padding-bottom: 5rem;
+    background: var(--color-primary-light);
+    background: url("../images/glob-bg.png")no-repeat center;
 }
 
 section.landing .container {
@@ -270,6 +276,9 @@ section.landing .profile-area .inner-circle {
 
 section.about{
     background: var(--color-light);
+    display: grid;
+    place-items: center;
+    padding-bottom: 5rem;
 }
 
 section.about .container {
@@ -423,6 +432,9 @@ section.recent-work h4 {
     text-align: left;
     margin: 3rem 0 1rem;
     width: 65%;
+}
+section.recent-work{
+    background: var(--color-primary-light);
 }
 
 section.recent-work .projects {
