@@ -285,6 +285,10 @@ section.about .container .read-more-content {
     display: none;
 }
 
+section.about .container .read-more-content.show-content{
+    display: block;
+}
+
 section.about .container .read-more {
     display: block;
     margin: 1rem 0 2rem;
@@ -322,7 +326,9 @@ section.skills .skill .head .left {
     align-items: center;
     gap: 1rem;
 }
-
+section.skills .container .skills .items .show-items{
+    display: block;
+}
 section.skills .skill .item{
     display: flex;
     flex-direction: column;
@@ -644,9 +650,9 @@ footer .copyright {
         width: 94%;
     }
 
-    nav {
+    /* nav {
         box-shadow:  0 1rem 1rem rgba(0,0,0,0.1);
-    }
+    } */
     nav h3 {
         margin-left: 1rem;
     }
