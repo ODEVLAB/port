@@ -22,6 +22,14 @@
     text-decoration: none;
 }
 
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--color-primary-light);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
 html {
     font-size: 15px;
     scroll-behavior: smooth;
@@ -335,8 +343,11 @@ section.skills .skill .head .left {
     align-items: center;
     gap: 1rem;
 }
-section.skills .container .skills .items .show-items{
+section.skills .container .skill .items.show-items{
     display: block;
+}
+section.skills .skill .items {
+    display: none;
 }
 section.skills .skill .item{
     display: flex;
