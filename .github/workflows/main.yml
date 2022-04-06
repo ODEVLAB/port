@@ -1,4 +1,4 @@
-name: CI-SFTP
+name: WorthRead
  
 # Controls when the action will run. 
 on:
