@@ -1,207 +1,544 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/images/Group 12.png">
-    <title>Worth Reading</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
-
 <body>
-    <header class="header-area header-sticky">
+    <nav>
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/Group 12.png" alt=""><img src="assets/images/Worth Reading.png" alt="">
-                        </a>
-                        <ul class="nav align-content-end">
-                            <li class="scroll-to-section"><a href="#welcome" class="menu-item active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
-                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
-                            <li><a href="#">Download App Now</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                    </nav>
-                </div>
-            </div>
+            <a href="#"><h3>Elijah Adeniyi</h3></a>
+            <ul>
+                <li><a href="#landing" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Let's Talk</a></li>
+                <li><a href="worthread.html">Test Serve</a></li>
+            </ul>
+            <button id="menu-btn"><span class="material-icons-sharp" >menu</span></button>
+            <button id="close-btn"><span class="material-icons-sharp" >close</span></button>
         </div>
-    </header>
-    <div class="welcome-area" id="welcome">
-        <div class="header-text">
+
+    </nav>
+    
+
+    <section class="landing" id="landing">
             <div class="container">
-                <div class="row">
-                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
-                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <h1>Get Informed with<em> WORTH READING</em></h1>
-                        <p>Worth Reading labore consectetur molestias ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reprehenderit, modi eum repudiandae placeat optio quasi labore consectetur molestias ad?.</p> 
-                        <a href="#about" class="main-button-slider"><img src="assets/images/play-store.png" alt=""></a>
+                <div class="socials">
+                    <a href="https://facebook.com/itzsamdam" target="_blank" rel="noopener"><i class="uil uil-facebook"></i></a>
+                    <a href="https://twitter.com/samdam10" target="_blank" rel="noopener"><i class="uil uil-twitter"></i></a>
+                    <a href="https://github.com/odevlab" target="_blank" rel="noopener"><i class="uil uil-github"></i></a>
+                    <a href="https://instagram.com/itz_samdam" target="_blank" rel="noopener"><i class="uil uil-instagram"></i></a>
+                </div>
+                <div class="info">
+                    <h1>Full Stack Web Developer & Digital Marketer</h1>
+                    <h3>Hi, I'm Elijah Damilare Adeniyi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae est repellendus, cupiditate quis amet quaerat iusto voluptatem deleniti praesentium voluptates?</p>
+                    <a href="#contact" class="btn btn-primary">Let's Talk</a>
+                </div>
+                <div class="profile-area">
+                    <div class="outer-circle">
+                        <span class="material-icons-sharp">design_services</span>
+                        <span class="material-icons-sharp">code</span>
+                        <span class="material-icons-sharp">developer_mode</span>
+                        <span class="material-icons-sharp">integration_instructions</span>
+                    </div>
+                    <div class="inner-circle">
+                        <img src="./images/profile.jpg" alt="">
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <section class="section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>01</h2>
-                            <img src="assets/images/features-icon-1.png" alt="">
-                            <h4>Readable and Relatable</h4>
-                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>02</h2>
-                            <img src="assets/images/features-icon-2.png" alt="">
-                            <h4>Active Engagements</h4>
-                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>03</h2>
-                            <img src="assets/images/features-icon-3.png" alt="">
-                            <h4>Fun and Interactive</h4>
-                            <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
-    <div class="left-image-decor"></div>
-    <section class="section" id="promotion">
+
+    <section class="about" id="about">
+        <h1>About</h1>
         <div class="container">
-            <div class="row">
-                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            <div class="image">
+                <img src="./images/profile-area.jpg" alt="">
+            </div>
+            <div class="info">
+                <p>Lorem ipsum dolor sit, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores praesentium explicabo unde perferendis amet eius sed similique omnis. Corrupti tempora nesciunt sapiente quis, nobis quibusdam amet. Voluptatem cum ullam ab laborum voluptates? Nisi aliquam voluptates, molestias rem temporibus laboriosam minus repellat quia, et quasi hic possimus suscipit voluptatem, perspiciatis officiis. amet consectetur adipisicing elit. Sapiente, tempora harum? Eligendi, culpa. Quis corrupti officia in sunt esse nulla autem adipisci incidunt, dolore illo, explicabo enim laudantium consectetur harum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quia repudiandae accusamus eius itaque, eligendi quas eveniet fuga officiis iste debitis. Porro nam quod iste numquam quaerat alias consequatur culpa neque eius consequuntur corrupti, facilis, deleniti expedita similique nobis laudantium est praesentium sapiente, illo ad. Autem vitae velit architecto modi!</p>
+                <div class="read-more-content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas suscipit, impedit excepturi nostrum commodi modi ratione reprehenderit magni nihil. Minus tenetur incidunt dolores nesciunt quam praesentium dolorem consequuntur in quas ipsam voluptatum, eveniet obcaecati illo sapiente corrupti explicabo architecto nobis nemo consequatur temporibus facere aliquid consectetur. In nostrum placeat officiis aliquam debitis maiores repudiandae deserunt ullam culpa, error natus optio modi molestias quae possimus eius nobis quibusdam eum vero magnam id et temporibus libero. Nihil inventore molestiae dolorem illum omnis, adipisci, porro et officiis eius reprehenderit eum, dolores at.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quos sequi esse possimus commodi libero a odio repellat excepturi dicta, aut repellendus architecto consequatur illo at qui, dolor rerum. Veritatis veniam repellat dignissimos doloribus explicabo deleniti. Molestias tenetur sunt voluptatum quae delectus dicta non vero consectetur accusantium, perferendis molestiae vel adipisci veniam iure! Eius, similique non totam sed maiores velit dolores vel quibusdam atque reprehenderit obcaecati aspernatur? Ipsam quia necessitatibus consectetur, totam eaque a eos illum inventore debitis at, magni molestias error nam natus ullam assumenda cum porro est exercitationem iusto ad ab temporibus. Animi sed sequi, magni magnam provident quas facilis eveniet quod unde id assumenda iste architecto omnis repellat, neque mollitia eos! Nesciunt officia suscipit eum cum inventore.</p>
                 </div>
-                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
-                    <ul>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                            <img src="assets/images/about-icon-01.png" alt="">
-                            <div class="text">
-                                <h4>Active Engagements</h4>
-                                <p>Please do not redistribute this template ZIP file for a download purpose. You may <a
-                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> us for
-                            additional licensing of our template or to get a PSD file.</p>
-                            </div>
-                        </li>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                            <img src="assets/images/about-icon-02.png" alt="">
-                            <div class="text">
-                                <h4>Fun and Interactive</h4>
-                                <p>You can <a rel="nofollow"
-                                        href="https://templatemo.com/tm-540-Worth Reading-landing-page">download Worth Reading
-                                        Template</a> from our website. Duis viverra, ipsum et scelerisque placerat, orci
-                                    magna consequat ligula.</p>
-                            </div>
-                        </li>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                            <img src="assets/images/about-icon-03.png" alt="">
-                            <div class="text">
-                                <h4>Readable and Relatable</h4>
-                                <p>Phasellus in imperdiet felis, eget vestibulum nulla. Aliquam nec dui nec augue
-                                    maximus porta. Curabitur tristique lacus.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <a class="read-more">Show More</a>
+                <a href="./images/my-cv.pdf" download class="btn btn-primary"><i class="uil uil-download-alt"></i> Download CV</a>
             </div>
         </div>
     </section>
 
-    <div class="right-image-decor"></div>
-    <footer id="contact-us">
+    <section class="skills" id="skills">
+        <h1>Skills</h1>
         <div class="container">
-            <div class="footer-content">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="contact-form">
-                            <form id="contact" action="" method="post">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12">
-                                        <fieldset>
-                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""
-                                                style="background-color: rgba(250,250,250,0.3);">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <fieldset>
-                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"
-                                                required="" style="background-color: rgba(250,250,250,0.3);">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"
-                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" class="main-button">Send Message
-                                                Now</button>
-                                        </fieldset>
-                                    </div>
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">design_services</span>
+                        <h4>UI/UX Design</h4>
+                    </div>
+                    <span class="material-icons-sharp">expand_more</span>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>Figma</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
                                 </div>
-                            </form>
+                                <h5>95%</h5>
+                            </div>
                         </div>
                     </div>
-                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
-                        <h2>More About <em>Worth Reading</em></h2>
-                        <p>Phasellus dapibus urna vel lacus accumsan, iaculis eleifend leo auctor. Duis at finibus odio.
-                            Vivamus ut pharetra arcu, in porta metus. Suspendisse blandit pulvinar ligula ut elementum.</p>
-                        <ul class="social">
-                            <li><a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        </ul>
+                    <div class="item">
+                        <h5>Adobe XD</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>65%</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Adobe After Effects</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>72%</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="sub-footer">
-                        <p>©<script>document.write(new Date().getFullYear());</script> WorthReading
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">design_services</span>
+                        <h4>Frontend Development</h4>
+                    </div>
+                    <span class="material-icons-sharp">expand_more</span>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>HTML</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>95%</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>CSS</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>65%</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>JavaScript</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>72%</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Bootstrap CSS</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>72%</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Tailwind CSS</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>72%</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Vue JS</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>72%</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">design_services</span>
+                        <h4>Backend Development</h4>
+                    </div>
+                    <span class="material-icons-sharp">expand_more</span>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>PHP</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>95%</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>Laravel</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>65%</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="head">
+                    <div class="left">
+                        <span class="material-icons-sharp">design_services</span>
+                        <h4>CMS</h4>
+                    </div>
+                    <span class="material-icons-sharp">expand_more</span>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>Wordpress</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>95%</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <h5>WIX</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress">
+    
+                                </div>
+                                <h5>65%</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1>Services</h1>
+        <div class="container">
+            <div class="service">
+                <span class="material-icons-sharp">design_services</span>
+                <h3>UI/UX Designs</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo id, tempore, non consectetur quis, voluptate exercitationem fuga at a unde impedit fugiat mollitia consequatur assumenda laudantium esse nulla excepturi rem?</p>
+            </div>
+            <div class="service">
+                <span class="material-icons-sharp">code</span>
+                <h3>Websites & Web Apps Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo id, tempore, non consectetur quis, voluptate exercitationem fuga at a unde impedit fugiat mollitia consequatur assumenda laudantium esse nulla excepturi rem?</p>
+            </div>
+            <div class="service">
+                <span class="material-icons-sharp">integration_instructions</span>
+                <h3>Mobile App Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo id, tempore, non consectetur quis, voluptate exercitationem fuga at a unde impedit fugiat mollitia consequatur assumenda laudantium esse nulla excepturi rem?</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="recent-work" id="portfolio">
+        <div class="container">
+            <h4>Recent Projects</h4>
+            <h1>Here are some of Most Recent Projects</h1>
+            <div class="projects">
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="./images/jaylighter.png" alt="">
+                    </div>
+                    <h2>JayLighter Pet Store Ecommerce Website with Payment System</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem sequi iste odio dolor, voluptatibus tempore natus temporibus veritatis mollitia!</p>
+                    <div class="action">
+                        <a href="https://github.com/" target="_blank" rel="noopener">Github</a>
+                        <a href="https://github.com/" target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="./images/port.png" alt="">
+                    </div>
+                    <h2>Professional Web Developer Portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem sequi iste odio dolor, voluptatibus tempore natus temporibus veritatis mollitia!</p>
+                    <div class="action">
+                        <a href="https://github.com/" target="_blank" rel="noopener">Github</a>
+                        <a href="https://github.com/" target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="thumbnail">
+                        <img src="./images/portfolio.png" alt="">
+                    </div>
+                    <h2>Professional Personal Portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem sequi iste odio dolor, voluptatibus tempore natus temporibus veritatis mollitia!</p>
+                    <div class="action">
+                        <a href="https://github.com/" target="_blank" rel="noopener">Github</a>
+                        <a href="https://github.com/" target="_blank" rel="noopener">Live Demo</a>
+                    </div>
+                </div>
+                    <div class="project">
+                        <div class="thumbnail">
+                            <img src="./images/courier.png" alt="">
+                        </div>
+                        <h2>Courier Management System WebApp</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem sequi iste odio dolor, voluptatibus tempore natus temporibus veritatis mollitia!</p>
+                        <div class="action">
+                            <a href="https://github.com/" target="_blank" rel="noopener">Github</a>
+                            <a href="https://github.com/" target="_blank" rel="noopener">Live Demo</a>
+                        </div>
+                    </div>
+            </div>
+        </div>   
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <h1>Testimonial</h1>
+        <div class="container swiper">
+            <div class="carousel swiper-wrapper">
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./images/avatar (1).jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Ayoola Derrick</h4>
+                                <small>CEO, derrick fashion house</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium facilis blanditiis quos reiciendis amet ratione, eos adipisci architecto tenetur!
+                    </p>
+                </div>
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./images/avatar (3).jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Ayoola Derrick</h4>
+                                <small>CEO, derrick fashion house</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium facilis blanditiis quos reiciendis amet ratione, eos adipisci architecto tenetur!
+                    </p>
+                </div>
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./images/avatar (1).jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Ayoola Derrick</h4>
+                                <small>CEO, derrick fashion house</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium facilis blanditiis quos reiciendis amet ratione, eos adipisci architecto tenetur!
+                    </p>
+                </div>
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./images/avatar (2).jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Thomas Kook</h4>
+                                <small>Builder</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium facilis blanditiis quos reiciendis amet ratione, eos adipisci architecto tenetur!
+                    </p>
+                </div>
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./images/avatar (3).jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Korke Forth</h4>
+                                <small>Photographer</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium facilis blanditiis quos reiciendis amet ratione, eos adipisci architecto tenetur!
+                    </p>
+                </div>
+                <div class="testimonial swiper-slide">
+                    <div class="head">
+                        <div class="profile-area">
+                            <div class="avatar">
+                                <img src="./images/avatar (4).jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <h4>Allyson Blinks</h4>
+                                <small>Civil Engineer</small>
+                            </div>
+                        </div>
+                        <div class="stars">
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                            <span class="material-icons-sharp">star_rate</span>
+                        </div>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium facilis blanditiis quos reiciendis amet ratione, eos adipisci architecto tenetur!
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-scrollbar">
+                <div class="swiper-scrollbar-drag"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="over">
+            <div class="container">
+                <h1>Let's Talk</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia natus eveniet tenetur accusamus dolor ducimus.</p>
+                <form action="https://formspree.io/f/xjvlrrld" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="Message" placeholder="Message" required></textarea>
+                    <input type="submit" value="Submit" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <a href="#"><h3>OdevLAB Creations</h3></a>
+                <ul>
+                    <li><a href="#landing">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Let's Talk</a></li>
+                </ul>
+
+                <div class="socials">
+                    <a href="https://facebook.com/itzsamdam" target="_blank" rel="noopener"><i class="uil uil-facebook"></i></a>
+                    <a href="https://twitter.com/samdam10" target="_blank" rel="noopener"><i class="uil uil-twitter"></i></a>
+                    <a href="https://github.com/odevlab" target="_blank" rel="noopener"><i class="uil uil-github"></i></a>
+                    <a href="https://instagram.com/itz_samdam" target="_blank" rel="noopener"><i class="uil uil-instagram"></i></a>
+                </div>
+        </div>
+        <div class="copyright">
+            Copyright &copy; OdevLAB Creations
         </div>
     </footer>
-
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-
 </body>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </html>
+
+
