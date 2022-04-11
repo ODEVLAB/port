@@ -1,3 +1,6 @@
+#ssh-keygen -t rsa
+#to generate the ssh
+
 name: WorthRead
  
 # Controls when the action will run. 
@@ -16,6 +19,7 @@ jobs:
   # This workflow contains a single job called "SFTP"
   deploy-via-sftp:
     runs-on: ubuntu-latest
+
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
